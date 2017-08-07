@@ -1,0 +1,24 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane fx:id="paneRoot" fx:controller="ui.UIController" xmlns:fx="http://javafx.com/fxml" stylesheets="@/ui/UI.css" styleClass="FrameUi">
+	<top>
+		<HBox fx:id="hboxTitle" alignment="CENTER" spacing="10.0">
+			<Label fx:id="labelTitle" alignment="TOP_LEFT" />
+			<Slider fx:id="transparenteSlider" min="30" max="100" value="100" />
+			<HBox alignment="TOP_RIGHT" spacing="3.0">
+				<Button fx:id="buttonMin" styleClass="minButton" />
+				<Button fx:id="buttonMax" styleClass="maxButton" />
+				<Button fx:id="buttonExit" styleClass="exitButton" />
+			</HBox>
+		</HBox>
+	</top>
+	<center>
+		<BorderPane fx:id="mainPane" />
+	</center>
+</BorderPane>

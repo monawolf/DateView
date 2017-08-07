@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.8.0_20_x64/jre/lib/ext/jfxrt.jar"/>
+	<classpathentry kind="lib" path="lib/ch.ntb.usbx-0.5.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

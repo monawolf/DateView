@@ -1,0 +1,61 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane fx:id="mainPane" fx:controller="ui.ContentPaneController" xmlns:fx="http://javafx.com/fxml"
+	stylesheets="@/ui/UI.css" styleClass="ContentPanel" >
+	<fx:define>
+		<ToggleGroup fx:id="tableGroup" />
+		<ToggleGroup fx:id="viewGroup" />
+	</fx:define>
+
+	<top>
+	<VBox spacing="10">
+			<HBox alignment="center" spacing="20">
+				<ToggleButton text="原始数据图" toggleGroup="$tableGroup" userData="LineChart" styleClass="ToggleButton"/>
+				<ToggleButton text="最新数据分布图" toggleGroup="$tableGroup" userData="RainfallMap" styleClass="ToggleButton"/>
+				<ToggleButton text="数据统计饼状图" toggleGroup="$tableGroup" userData="PieChart" styleClass="ToggleButton"/>
+				<ToggleButton text="筛选条件饼状图" toggleGroup="$tableGroup" userData="FilterPieChart" styleClass="ToggleButton"/>
+				<ToggleButton text="数据恢复" toggleGroup="$tableGroup" userData="DataRecovery" styleClass="ToggleButton"/>
+				<HBox alignment="center" spacing="8">
+					<Label text="选择设备产品编号" styleClass="ChoiceLabel"/>
+					<ChoiceBox fx:id="usbDeviceChoiceBox"/>
+				</HBox>
+			</HBox>
+			
+			<HBox alignment="center" spacing="5" fx:id="filterController" visible="false" managed="false">
+				<Label text="频率范围从"/>
+				<TextField fx:id="filterInput1" promptText="请输入频率范围(整数)"/>
+				<Label text="到"/>
+				<TextField fx:id="filterInput2" promptText="请输入频率范围(整数)"/>
+				<Button text="确定" fx:id="filterButton"/>
+			</HBox>
+			
+			<VBox spacing="5" fx:id="dataRecovery" visible="false" managed="false">
+				<HBox alignment="center" spacing="5">
+					<Label text="选择需要恢复的文件："/>
+					<TextField fx:id="fileUrl"  promptText="请选择文件" editable="false" styleClass="TextField" />
+					<Button fx:id="selectFileButton" text="选择文件"/>
+				</HBox>
+				<HBox alignment="center" spacing="5">
+					<Label text="选择视图："/>
+					<RadioButton text="原始数据图" toggleGroup="$viewGroup" userData="LineChart" />
+					<RadioButton text="最新数据分布图" toggleGroup="$viewGroup" userData="RainfallMap" />
+					<RadioButton text="数据统计饼状图" toggleGroup="$viewGroup" userData="PieChart" />
+					<RadioButton text="筛选条件饼状图" toggleGroup="$viewGroup" userData="FilterPieChart" />
+				</HBox>
+				<HBox alignment="center" spacing="5" fx:id="filterController2" visible="false" managed="false">
+					<Label text="频率范围从"/>
+					<TextField fx:id="filterInput3" promptText="请输入频率范围(整数)" styleClass="TextField2"/>
+					<Label text="到"/>
+					<TextField fx:id="filterInput4" promptText="请输入频率范围(整数)" styleClass="TextField2"/>
+				</HBox>
+				<HBox alignment="center" spacing="5">
+					<Button text="确定" fx:id="filterButton2"/>
+				</HBox>
+			</VBox>
+		</VBox>
+	</top>
+
+	<center>
+	</center>
+</BorderPane>

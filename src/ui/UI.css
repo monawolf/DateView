@@ -1,0 +1,63 @@
+/* 主框架 */
+.FrameUi{
+	-fx-background-color:LIGHTGRAY;
+	-fx-background-radius:null;
+	-fx-background-insets:null;
+	-fx-padding: 10 10 10 10;
+}
+
+/* 主框架 最小化按钮 */
+.FrameUi .minButton{
+	-fx-scale-shape:false;
+	-fx-background-color:FORESTGREEN;
+	-fx-background-radius:null;
+	-fx-background-insets:null;
+}
+
+/* 主框架 最大化按钮 */
+.FrameUi .maxButton{
+	-fx-scale-shape:false;
+	-fx-background-color:GOLD;
+	-fx-background-radius:null;
+	-fx-background-insets:null;
+}
+
+/* 主框架 关闭按钮 */
+.FrameUi .exitButton{
+	-fx-scale-shape:false;
+	-fx-background-color:CRIMSON;
+	-fx-background-radius:null;
+	-fx-background-insets:null;
+}
+
+/* 主框架 选择组 */
+.ContentPanel .ToggleButton {
+	-fx-min-width: 100px;
+	-fx-scale-shape:false;
+	-fx-background-color:snow;
+}
+
+/* 选择设备提示标签 */
+.ContentPanel .ChoiceLabel{
+	-fx-scale-shape:false;
+	-fx-background-insets:-5;
+	-fx-background-radius:2;
+	-fx-background-color:snow;
+}
+.ContentPanel .choice-box{
+	-fx-background-color:snow;
+}
+
+/* 恢复数据页 路径框 */
+.ContentPanel .TextField{
+	-fx-pref-width:280px;
+	-fx-min-width:280px;
+	-fx-max-width:280px;
+}
+
+/* 恢复数据页 范围输入框 */
+.ContentPanel .TextField2{
+	-fx-pref-width:194px;
+	-fx-min-width:194px;
+	-fx-max-width:194px;
+}

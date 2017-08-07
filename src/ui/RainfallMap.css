@@ -1,0 +1,20 @@
+/* 图例区域 */
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 5px;
+}
+ 
+ /* 图例字体的颜色 */
+.chart-legend-item{
+    -fx-text-fill: black;
+}
+
+.default-color0.chart-legend-item-symbol {
+    -fx-background-radius: 5;
+	-fx-background-color: rgb(75%,100%,0%); 
+}
+
+.default-color1.chart-legend-item-symbol {
+    -fx-background-radius: 5;
+	-fx-background-color: rgb(100%,4%,0%); 
+}
